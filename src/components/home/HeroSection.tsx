@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative bg-[#F8F6F6] pt-20 pb-32 overflow-hidden">
+    <section className="relative bg-[#F8F6F6] pt-12 pb-16 md:pt-20 md:pb-32 overflow-hidden">
       {/* Background decorative blurs */}
       <motion.div
         animate={{
@@ -67,7 +67,7 @@ const HeroSection: React.FC = () => {
         className="absolute left-[738px] bottom-22 w-64 h-64 bg-[rgba(254,215,170,0.2)] rounded-full blur-[32px]"
       />
 
-      <div className="max-w-[1280px] mx-auto px-8 relative z-10">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -76,13 +76,13 @@ const HeroSection: React.FC = () => {
             animate="visible"
           >
             {/* Heading */}
-            <motion.h1 variants={itemVariants} className="font-inter text-[56px] lg:text-[70px] leading-[1.1] text-[#111827] mb-8">
+            <motion.h1 variants={itemVariants} className="font-inter text-[36px] sm:text-[46px] md:text-[56px] lg:text-[70px] leading-[1.1] text-[#111827] mb-6 md:mb-8">
               Discover Your<br />
               <span className="italic text-primary">Dream Home</span>
             </motion.h1>
 
             {/* Description */}
-            <motion.p variants={itemVariants} className="font-manrope font-light text-xl leading-7 text-[#4b5563] mb-12 max-w-[676px]">
+            <motion.p variants={itemVariants} className="font-manrope font-light text-base sm:text-lg md:text-xl leading-7 text-[#4b5563] mb-8 md:mb-12 max-w-[676px]">
               The direct path to exclusive properties. Our team curates the market's
               finest opportunities tailored specifically to your needs, ensuring transparency
               at every step.
@@ -90,11 +90,11 @@ const HeroSection: React.FC = () => {
 
             {/* CTA Buttons */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-10">
-              <Link to="/properties" className="bg-primary text-white font-manrope font-bold text-lg px-8 py-4 rounded-xl shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.2)] hover:opacity-90 transition-all hover:shadow-xl inline-flex items-center">
+              <Link to="/properties" className="bg-primary text-white font-manrope font-bold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.2)] hover:opacity-90 transition-all hover:shadow-xl inline-flex items-center">
                 Explore Properties
                 <span className="font-material-icons text-sm ml-2">arrow_forward</span>
               </Link>
-              <Link to="/contact" className="border-2 border-gray-300 text-[#374151] font-manrope font-bold text-lg px-8 py-4 rounded-xl hover:border-primary hover:text-primary transition-all inline-block">
+              <Link to="/contact" className="border-2 border-gray-300 text-[#374151] font-manrope font-bold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:border-primary hover:text-primary transition-all inline-block">
                 Work With Us
               </Link>
             </motion.div>
@@ -118,7 +118,7 @@ const HeroSection: React.FC = () => {
           {/* Right - Featured Property Card */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-[0px_25px_50px_-12px_#e5e7eb]">
-              <div className="relative h-[625px]">
+              <div className="relative h-[300px] sm:h-[400px] lg:h-[625px]">
                 <img
                   src={propertyImages[3]}
                   alt="Villa Serenity"
