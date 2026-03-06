@@ -2,14 +2,14 @@ import React from 'react';
 
 const ProcessSection: React.FC = () => {
   return (
-    <section id="how-it-works" className="bg-[#F0EBE5] py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section id="how-it-works" className="bg-[#F0EBE5] py-16 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           {/* Left - Sticky Content */}
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-24">
               <div className="font-space-mono text-sm text-primary uppercase tracking-widest mb-6">How It Works</div>
-              <h2 className="font-inter font-bold text-5xl text-[#111827] mb-6 leading-tight">
+              <h2 className="font-inter font-bold text-3xl sm:text-4xl md:text-5xl text-[#111827] mb-4 md:mb-6 leading-tight">
                 Your Trusted Path to<br />
                 <span className="italic text-primary text-4xl">Property Ownership</span>
               </h2>
@@ -50,7 +50,7 @@ const ProcessSection: React.FC = () => {
               }
             ].map((item, index) => (
               <div key={index} className="group">
-                <div className="flex gap-8">
+                <div className="flex gap-4 sm:gap-8">
                   <div className="flex-shrink-0">
                     <div className="w-14 h-14 border border-primary/20 bg-white group-hover:bg-primary group-hover:border-primary rounded-full flex items-center justify-center transition-all duration-300">
                       <span className="font-space-mono font-bold text-lg text-primary group-hover:text-white">{item.step}</span>
