@@ -31,16 +31,16 @@ const TrustSignalsSection: React.FC = () => {
   ];
 
   return (
-    <section id="our-values" className="bg-[#F8F6F6] py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section id="our-values" className="bg-[#F8F6F6] py-16 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-inter font-bold text-5xl text-[#111827] mb-6">Our Values</h2>
+          <h2 className="font-inter font-bold text-3xl sm:text-4xl md:text-5xl text-[#111827] mb-4 md:mb-6">Our Values</h2>
           <div className="w-24 h-1 bg-primary mx-auto" />
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left - Image with Border */}
           <div className="relative">
             <div className="border-2 border-primary/20 rounded-2xl p-4">
