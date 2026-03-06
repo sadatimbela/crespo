@@ -98,12 +98,12 @@ const WhyTanzaniaSection: React.FC = () => {
     ];
 
     return (
-        <section id="invest-tanzania" className="relative bg-[#F0EBE5] py-28 overflow-hidden">
+        <section id="invest-tanzania" className="relative bg-[#F0EBE5] py-16 md:py-28 overflow-hidden">
             {/* Decorative background blobs */}
             <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
-            <div className="max-w-[1280px] mx-auto px-8 relative z-10">
+            <div className="max-w-[1280px] mx-auto px-4 sm:px-8 relative z-10">
                 {/* Section Header */}
                 <div
                     ref={headerRef}
@@ -114,7 +114,7 @@ const WhyTanzaniaSection: React.FC = () => {
                         transition: 'opacity 0.7s ease, transform 0.7s ease',
                     }}
                 >
-                    <h2 className="font-inter font-bold text-5xl text-[#111827] mb-6">
+                    <h2 className="font-inter font-bold text-3xl sm:text-4xl md:text-5xl text-[#111827] mb-4 md:mb-6">
                         Why Invest in <span className="text-primary">Tanzania?</span>
                     </h2>
                     <p className="font-manrope font-light text-lg text-[#4b5563] max-w-[680px] mx-auto leading-relaxed">
