@@ -26,12 +26,12 @@ const KeyPeopleSection: React.FC = () => {
     ];
 
     return (
-        <section id="leadership" className="bg-white py-24">
-            <div className="max-w-[1280px] mx-auto px-8">
+        <section id="leadership" className="bg-white py-16 md:py-24">
+            <div className="max-w-[1280px] mx-auto px-4 sm:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <div className="font-space-mono text-sm text-primary uppercase tracking-widest mb-4">Our Key People</div>
-                    <h2 className="font-inter font-bold text-5xl text-[#111827] mb-6">Meet Our Leadership</h2>
+                    <h2 className="font-inter font-bold text-3xl sm:text-4xl md:text-5xl text-[#111827] mb-4 md:mb-6">Meet Our Leadership</h2>
                     <p className="font-manrope font-light text-lg text-[#4b5563] max-w-[740px] mx-auto">
                         Our team brings together decades of local expertise and legal precision to ensure
                         your investment journey in Tanzania is secure and successful.
